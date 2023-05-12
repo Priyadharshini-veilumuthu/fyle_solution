@@ -1,0 +1,14 @@
+.bt
+{
+    line-height: 60px;
+    margin-left: -10px;
+    font-style: italic;
+}
+.text{
+    font-size: 50px;
+    font-style: italic;
+}
+ul{
+  
+    list-style-type: none;
+}

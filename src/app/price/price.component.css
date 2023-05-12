@@ -1,0 +1,16 @@
+.gallery
+{
+    margin: 70px;
+    float: left;
+}
+.gallery img{
+    margin-top: -80px;
+    width: 300px;
+    height: 300px;
+}
+.book-cover{
+    line-height: 250px;
+    float: left;
+    width: 330px;
+}
+ 

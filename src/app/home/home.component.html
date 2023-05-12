@@ -1,0 +1,29 @@
+<mat-toolbar  class="mat-elevation-z4">
+  <mat-toolbar-row>
+  <div class="book-lib"><b>OPEN BOOK LIBRARY</b></div>
+<div class="example-spacer"></div>
+<div class="header">
+  <div class="search-button">
+    <mat-icon class="tw-mt-16-px" aria-label="Search Icon">search</mat-icon>
+    <input
+      [formControl]="bookSearch"
+      name="searchKey"
+      type="text"
+      placeholder="Search Books"
+      class="tw-border-0 tw-bg-inherit"
+    >
+  </div>
+</div>
+</mat-toolbar-row>
+</mat-toolbar>
+
+  <div >
+    <section>
+      <div class="sub">TRENDING SUBJECTS</div>
+      <ul class="sub2">
+        <li *ngFor="let subject of trendingSubjects" routerLink="/trending-subject/{{ subject.name }}">
+          {{ subject.name }}
+        </li>
+      </ul>
+    </section>
+  </div>

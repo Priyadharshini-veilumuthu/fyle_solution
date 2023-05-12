@@ -1,0 +1,77 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-toolbar
+  {
+    background-color: #45d4d2;
+  }
+.welcome
+{
+    margin-left: 2px;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.sidenav-wrapper{
+    background-color: rgb(232, 199, 223);
+  }
+  mat-sidenav
+  {
+    background-color:rgb(150, 240, 240);
+   margin: 3px;
+   width: 200px;
+   border-right: none;border-radius: 10px;
+   
+  }
+  .content
+  {
+    
+    margin:20px;
+    margin-left:50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:rgb(129, 190, 212);
+    border-radius: 60px;
+    color: red;
+  }
+  mat-sidenav-container
+  {
+    height: calc(100vh - 65px);
+  }
+  ul{
+  
+        list-style-type: none;
+  }
+  button{
+    margin:10px;
+    font-size: 17px;
+    background: transparent;
+  }
+  ::ng-deep
+  {
+    .mat-menu-content
+    {
+        width: 100px;
+    }
+  }
+  button span
+  {
+    margin: 10px;
+  }
+  -mat-elevation-z4
+  {
+    position: relative;
+    z-index: 2;
+  }
+  .fixed{
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+  }
+  .nofixed{
+    position: static;
+    width: 100%;
+    transition: 0.2s linear;
+    top: -50%;
+  }

@@ -1,0 +1,65 @@
+
+
+  <mat-toolbar  class="mat-elevation-z4" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <mat-toolbar-row>
+    <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+    <div class="welcome"><b>WELCOME</b></div>
+  <div class="example-spacer"></div>
+ <div class="row mr=2 ml=auto">
+  <ul>
+    <li>
+      <button mat-button [matMenuTriggerFor]="menu" class="user mt=2 d-flex align-items-center">
+        
+        PROFILE
+        <mat-icon >account_circle</mat-icon>
+        
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon class="maticon">exit_to_app</mat-icon>
+          LOGOUT
+        </button> 
+</mat-menu>
+    </li>
+  </ul>
+ </div>    
+</mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-wrapper" >
+  <mat-sidenav #nav opened="true" mode="side" >
+  <a [routerLink]="['home']" routerLinkActive="active" color="primary">
+    <button mat-button >
+       <mat-icon>home</mat-icon>
+       <span>HOME</span>
+    </button>
+  </a>
+  <a [routerLink]="['subb']" color="primary">
+    <button mat-button>
+       <mat-icon>search</mat-icon>
+       <span>SEARCH</span>
+    </button>
+  </a>
+  <a [routerLink]="['price']" color="primary">
+    <button mat-button>
+       <mat-icon>book</mat-icon>
+       <span>TRENDING</span>
+    </button>
+  </a>
+  <a [routerLink]="['helpss']" color="primary">
+    <button mat-button>
+       <mat-icon>help</mat-icon>
+       <span>HELP</span>
+    </button>
+  </a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div  class="content">
+      <p style="height: 88px;">
+      <router-outlet></router-outlet>
+      </p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

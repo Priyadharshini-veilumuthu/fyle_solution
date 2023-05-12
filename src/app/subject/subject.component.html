@@ -1,0 +1,97 @@
+<!--
+<div class='container vspace'>
+  <div class="page-header">
+    <h2>iCS Discover's Google Book Search
+      <img style="float: right;" *ngIf="loading" src='../asset/images/ajax-loader-preview.gif' />
+    </h2>
+  </div>
+-->
+  <!--<div class="row vspace">
+    <div class="input-group">
+      <app-search-box (loading)="loading = $event" (results)="updateResults($event)" ></app-search-box>
+    </div>
+  </div>
+-->
+<!--
+  <div class="row vspace">
+    <p>{{message}}</p>
+    <div class="input-group">
+      <app-search-result *ngFor="let result of results" [result]="result"></app-search-result>
+    </div>
+  </div>
+</div>
+-->
+<div>
+<div class="page-header">
+  <h2  class="textt"> 
+    <mat-icon>book</mat-icon>
+    Book Search
+    
+    <img style="float: right;" />
+  </h2>
+  
+  <input type="text" class="form-control" placeholder="search">
+  <mat-icon color="primry">search</mat-icon>
+  <div class="row vspace">
+    
+</div>
+
+</div>
+
+
+
+
+  <!--
+      <form [formGroup]="searchForm">
+  
+         <label>
+  
+             <input type="text"  formControlName="search" placeholder="Search repos..." />
+  
+             <div *ngIf="loading"> 
+  
+                <p class="search-message">Searching</p>
+  
+                 <div class="lds-ellipsis"></div>
+  
+             </div>
+         </label>
+  
+      </form>
+
+      <div *ngIf="searchResults">
+  
+            <div class="results">
+  
+                 <div class="repo" *ngFor="let result of paginationElements | paginate: {itemsPerPage: 10, currentPage: 'page'}">
+  
+                 <div>
+  
+                    <img loading="lazy" [attr.src]="result.owner.avatar_url"
+                      width="200"
+  
+                     height="auto"
+  
+                    alt="avatar"
+                   >
+                   <h2><a href="{{result.clone_url}}" target="_blank">{{result.full_name}}</a></h2>
+  
+                       <p><strong>{{result.owner.login}}</strong></p>
+  
+                    <p><em>Forks</em>: {{result.forks_count}}</p>
+  
+                    <p><em>Issues</em>: {{result.open_issues_count}}</p>
+  
+                </div>
+  
+             </div>
+  
+        </div>
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+ </div>
+  <div *ngIf="errorMessage" class="errorMessage">
+    <h2>Error</h2>
+    <p class="error">{{errorMessage}}</p>
+  </div>
+</section>
+-->
